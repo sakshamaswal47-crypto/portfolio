@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ========================= SEO META TAGS ========================= -->
+  <title>Saksham Aswal | Full Stack Developer & DSA Enthusiast</title>
+  <meta name="description" content="Saksham Aswal is a Full Stack Developer and Computer Science student skilled in C++, JavaScript, React, Node.js and DSA. Explore projects, skills and experience." />
+  <meta name="keywords" content="Saksham Aswal, Full Stack Developer, DSA, Web Developer Portfolio, React Developer, Node.js Developer, Computer Science Student" />
+  <meta name="author" content="Saksham Aswal" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://sakshamaswal.dev/" />
+
+  <!-- Open Graph / Social sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Saksham Aswal | Full Stack Developer" />
+  <meta property="og:description" content="Full Stack Developer, Problem Solver and DSA Enthusiast. Explore my projects, skills and experience." />
+  <meta property="og:url" content="https://sakshamaswal.dev/" />
+  <meta property="og:image" content="assets/og-image.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Saksham Aswal | Full Stack Developer" />
+  <meta name="twitter:description" content="Full Stack Developer, Problem Solver and DSA Enthusiast." />
+
+  <meta name="theme-color" content="#0B0B0B" />
+
+  <!-- Favicon (replace with your own icon file) -->
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+
+  <!-- ========================= FONTS ========================= -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- ========================= STYLES ========================= -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Structured data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Saksham Aswal",
+    "jobTitle": "Full Stack Developer",
+    "url": "https://sakshamaswal.dev/",
+    "sameAs": [
+      "https://github.com/sakshamaswal",
+      "https://linkedin.com/in/sakshamaswal"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ========================= LOADING SCREEN ========================= -->
+  <div id="loading-screen" role="status" aria-live="polite" aria-label="Loading website">
+    <div class="loader-content">
+      <span class="loader-brand">SA<span class="dot">.</span></span>
+      <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+      <p class="loader-text">Compiling portfolio...</p>
+    </div>
+  </div>
+
+  <!-- ========================= SCROLL PROGRESS BAR ========================= -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ========================= ANIMATED BACKGROUND CANVAS ========================= -->
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+  <!-- ========================= SKIP LINK (Accessibility) ========================= -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ========================= NAVBAR ========================= -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-container" aria-label="Primary navigation">
+      <a href="#hero" class="logo">Saksham<span class="accent">.</span></a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#hero" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ========================= 1. HERO SECTION ========================= -->
+    <section id="hero" class="hero" aria-label="Introduction">
+      <div class="hero-inner">
+        <p class="hero-eyebrow fade-in">Hello, I'm</p>
+        <h1 class="hero-name fade-in">Saksham Aswal</h1>
+
+        <h2 class="hero-role" aria-live="polite">
+          <span id="typing-text"></span><span class="cursor" aria-hidden="true">|</span>
+        </h2>
+
+        <p class="hero-desc fade-in">
+          Building scalable, efficient and thoughtful software — one clean commit at a time.
+        </p>
+
+        <div class="hero-cta fade-in">
+          <a href="assets/Saksham_Aswal_Resume.pdf" class="btn btn-primary" download>
+            <span>Download Resume</span>
+          </a>
+          <a href="#projects" class="btn btn-outline">
+            <span>View Projects</span>
+          </a>
+          <a href="#contact" class="btn btn-ghost">
+            <span>Contact Me</span>
+          </a>
+        </div>
+
+        <div class="hero-scroll-indicator" aria-hidden="true">
+          <span class="mouse"><span class="wheel"></span></span>
+          <p>Scroll</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= 2. ABOUT SECTION ========================= -->
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="section-container">
+        <p class="section-eyebrow">About Me</p>
+        <h2 id="about-title" class="section-title">Who I Am</h2>
+
+        <div class="about-grid">
+          <div class="about-card glass-card slide-up">
+            <p>
+              I'm a <strong>Computer Science student</strong> and a passionate
+              <strong> Full Stack Developer</strong> who enjoys turning complex problems
+              into clean, working software. My foundation is built on strong fundamentals
+              in <strong>C++</strong>, <strong>Data Structures &amp; Algorithms</strong>,
+              and modern <strong>JavaScript</strong>.
+            </p>
+            <p>
+              I'm especially interested in designing and building
+              <strong> scalable web applications</strong> that solve real problems for
+              real people. Beyond the classroom, I'm a <strong>continuous learner</strong> —
+              always exploring new tools, patterns and system design concepts to become
+              a better engineer every day.
+            </p>
+          </div>
+
+          <div class="about-stats">
+            <div class="stat-card glass-card slide-up">
+              <span class="stat-number" data-count="500">0</span>
+              <span class="stat-suffix">+</span>
+              <p class="stat-label">DSA Problems Solved</p>
+            </div>
+            <div class="stat-card glass-card slide-up">
+              <span class="stat-number" data-count="10">0</span>
+              <span class="stat-suffix">+</span>
+              <p class="stat-label">Core Technologies</p>
+            </div>
+            <div class="stat-card glass-card slide-up">
+              <span class="stat-number" data-count="6">0</span>
+              <span class="stat-suffix">.0</span>
+              <p class="stat-label">CGPA</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= 3. SKILLS SECTION ========================= -->
+    <section id="skills" class="section" aria-labelledby="skills-title">
+      <div class="section-container">
+        <p class="section-eyebrow">What I Work With</p>
+        <h2 id="skills-title" class="section-title">Skills</h2>
+
+        <div class="skills-grid">
+
+          <!-- Frontend -->
+          <div class="skill-category glass-card slide-up">
+            <h3>Frontend</h3>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>HTML5</span><span>95%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="95"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>CSS3</span><span>90%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>JavaScript</span><span>88%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>React</span><span>85%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>Tailwind CSS</span><span>85%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+            </div>
+          </div>
+
+          <!-- Backend -->
+          <div class="skill-category glass-card slide-up">
+            <h3>Backend</h3>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>Node.js</span><span>80%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>Express.js</span><span>80%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+            </div>
+
+            <h3 class="skill-subheading">Database</h3>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>PostgreSQL</span><span>75%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>MongoDB</span><span>78%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="78"></div></div>
+            </div>
+          </div>
+
+          <!-- Programming -->
+          <div class="skill-category glass-card slide-up">
+            <h3>Programming</h3>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>C++</span><span>90%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>Java</span><span>75%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>SQL</span><span>78%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="78"></div></div>
+            </div>
+
+            <h3 class="skill-subheading">Tools</h3>
+            <div class="tool-chips">
+              <span class="chip">Git</span>
+              <span class="chip">GitHub</span>
+              <span class="chip">VS Code</span>
+              <span class="chip">Postman</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= 4. PROJECTS SECTION ========================= -->
+    <section id="projects" class="section" aria-labelledby="projects-title">
+      <div class="section-container">
+        <p class="section-eyebrow">Selected Work</p>
+        <h2 id="projects-title" class="section-title">Projects</h2>
+
+        <div class="projects-grid">
+
+          <article class="project-card glass-card slide-up">
+            <div class="project-thumb" aria-hidden="true">
+              <span class="project-thumb-glyph">&lt;/&gt;</span>
+            </div>
+            <div class="project-body">
+              <h3>Portfolio Website</h3>
+              <p>
+                A fully responsive personal portfolio built with HTML, CSS and
+                vanilla JavaScript — featuring glassmorphism UI, scroll animations
+                and a particle background.
+              </p>
+              <div class="project-tags">
+                <span class="chip">HTML5</span>
+                <span class="chip">CSS3</span>
+                <span class="chip">JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="text-link">Live Demo →</a>
+                <a href="#" class="text-link">Source Code →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Placeholder project slots — replace with your real projects -->
+          <article class="project-card glass-card slide-up project-placeholder">
+            <div class="project-thumb" aria-hidden="true">
+              <span class="project-thumb-glyph">+</span>
+            </div>
+            <div class="project-body">
+              <h3>Add Your Project</h3>
+              <p>Replace this card in <code>index.html</code> with your next build — title, description, tags and links.</p>
+              <div class="project-tags">
+                <span class="chip">Tech Stack</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="text-link">Live Demo →</a>
+                <a href="#" class="text-link">Source Code →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card slide-up project-placeholder">
+            <div class="project-thumb" aria-hidden="true">
+              <span class="project-thumb-glyph">+</span>
+            </div>
+            <div class="project-body">
+              <h3>Add Your Project</h3>
+              <p>Duplicate this card as many times as needed to showcase your work.</p>
+              <div class="project-tags">
+                <span class="chip">Tech Stack</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="text-link">Live Demo →</a>
+                <a href="#" class="text-link">Source Code →</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= 5. EDUCATION SECTION ========================= -->
+    <section id="education" class="section" aria-labelledby="education-title">
+      <div class="section-container">
+        <p class="section-eyebrow">Academic Background</p>
+        <h2 id="education-title" class="section-title">Education</h2>
+
+        <div class="timeline">
+          <div class="timeline-item glass-card slide-up">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <h3>Bachelor of Technology</h3>
+              <p class="timeline-sub">Computer Science Engineering</p>
+              <p class="timeline-meta">CGPA: <strong>6.0</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= 6. EXPERIENCE SECTION ========================= -->
+    <section id="experience" class="section" aria-labelledby="experience-title">
+      <div class="section-container">
+        <p class="section-eyebrow">Where I've Worked</p>
+        <h2 id="experience-title" class="section-title">Experience</h2>
+
+        <div class="timeline">
+          <div class="timeline-item glass-card slide-up">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <h3>Open Source Contributor</h3>
+              <p class="timeline-sub">Community Projects</p>
+              <p>Contributing code, fixing issues and collaborating with developers on open-source repositories.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item glass-card slide-up">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <h3>Freelance Web Developer</h3>
+              <p class="timeline-sub">Self-Employed</p>
+              <p>Designing and building websites and web applications for clients using modern front-end and back-end technologies.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= 7. CERTIFICATIONS SECTION ========================= -->
+    <section id="certifications" class="section" aria-labelledby="certifications-title">
+      <div class="section-container">
+        <p class="section-eyebrow">Verified Learning</p>
+        <h2 id="certifications-title" class="section-title">Certifications</h2>
+
+        <div class="cert-grid">
+          <div class="cert-card glass-card slide-up">
+            <span class="cert-icon" aria-hidden="true">🎓</span>
+            <h3>Responsive Web Design</h3>
+          </div>
+          <div class="cert-card glass-card slide-up">
+            <span class="cert-icon" aria-hidden="true">🎓</span>
+            <h3>JavaScript Algorithms and Data Structures</h3>
+          </div>
+          <div class="cert-card glass-card slide-up">
+            <span class="cert-icon" aria-hidden="true">🎓</span>
+            <h3>Git &amp; GitHub</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= 8. ACHIEVEMENTS SECTION ========================= -->
+    <section id="achievements" class="section" aria-labelledby="achievements-title">
+      <div class="section-container">
+        <p class="section-eyebrow">Milestones</p>
+        <h2 id="achievements-title" class="section-title">Achievements</h2>
+
+        <div class="achieve-grid">
+          <div class="achieve-card glass-card slide-up">
+            <span class="achieve-icon" aria-hidden="true">🏆</span>
+            <h3>500+ DSA Problems Solved</h3>
+            <p>Consistently practicing data structures and algorithms across multiple platforms.</p>
+          </div>
+          <div class="achieve-card glass-card slide-up">
+            <span class="achieve-icon" aria-hidden="true">🧩</span>
+            <h3>Strong Problem Solving</h3>
+            <p>Applying analytical thinking to break down and solve complex technical challenges.</p>
+          </div>
+          <div class="achieve-card glass-card slide-up">
+            <span class="achieve-icon" aria-hidden="true">📈</span>
+            <h3>Learning System Design</h3>
+            <p>Actively studying scalable architecture and system design fundamentals.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= 9. CONTACT SECTION ========================= -->
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="section-container">
+        <p class="section-eyebrow">Get In Touch</p>
+        <h2 id="contact-title" class="section-title">Contact Me</h2>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <a href="mailto:saksham.aswal@example.com" class="contact-item glass-card slide-up">
+              <span class="contact-icon" aria-hidden="true">✉️</span>
+              <div>
+                <p class="contact-label">Email</p>
+                <p class="contact-value">saksham.aswal@example.com</p>
+              </div>
+            </a>
+
+            <a href="tel:+911234567890" class="contact-item glass-card slide-up">
+              <span class="contact-icon" aria-hidden="true">📞</span>
+              <div>
+                <p class="contact-label">Phone</p>
+                <p class="contact-value">+91 7505352382</p>
+              </div>
+            </a>
+
+            <a href="https://github.com/sakshamaswal47-crypto" target="_blank" rel="noopener noreferrer" class="contact-item glass-card slide-up">
+              <span class="contact-icon" aria-hidden="true">🐙</span>
+              <div>
+                <p class="contact-label">GitHub</p>
+                <p class="contact-value">github.com/sakshamaswal</p>
+              </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/saksham-aswal-2632583a8?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener noreferrer" class="contact-item glass-card slide-up">
+              <span class="contact-icon" aria-hidden="true">💼</span>
+              <div>
+                <p class="contact-label">LinkedIn</p>
+                <p class="contact-value">linkedin.com/in/sakshamaswal</p>
+              </div>
+            </a>
+
+            <div class="contact-item glass-card slide-up">
+              <span class="contact-icon" aria-hidden="true">📍</span>
+              <div>
+                <p class="contact-label">Location</p>
+                <p class="contact-value">India</p>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form glass-card slide-up" id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary full-width">Send Message</button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================= 10. FOOTER ========================= -->
+  <footer class="footer">
+    <div class="footer-container">
+      <a href="#hero" class="logo">Saksham<span class="accent">.</span></a>
+      <p class="footer-tagline">Full Stack Developer · Problem Solver · DSA Enthusiast</p>
+
+      <div class="footer-socials">
+        <a href="https://github.com/sakshamaswal47-crypto" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+        <a href="https://www.linkedin.com/in/saksham-aswal-2632583a8?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+        <a href="mailto:saksham.aswal@example.com" aria-label="Email">Email</a>
+      </div>
+
+      <p class="footer-copy">&copy; <span id="current-year"></span> Saksham Aswal. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ========================= SCROLL TO TOP BUTTON ========================= -->
+  <button id="scroll-top-btn" aria-label="Scroll to top">↑</button>
+
+  <!-- ========================= SCRIPTS ========================= -->
+  <script src="script.js"></script>
+</body>
+</html>
